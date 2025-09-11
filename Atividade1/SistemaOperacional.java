@@ -8,12 +8,12 @@ public class SistemaOperacional {
 
     public boolean executarPrograma(Programa p) {
         if (p.getSSDOcupado() > computador.getSSD()) {
-            System.out.println("SSD Indisponivel pelo computador");
+            System.out.println("Erro na Instalacao: Sem espaco o suficiente.");
             
         }else
 
         if (p.getMemoriaRAMAlocada() > computador.getMemoriaRAM()) {
-            System.out.println("Memoria RAM Indisponivel pelo computador");
+            System.out.println("Erro na execucao: Sem memoria RAM o suficiente.");
             
         }else 
             
