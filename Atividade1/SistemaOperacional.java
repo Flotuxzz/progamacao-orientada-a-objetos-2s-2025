@@ -13,7 +13,7 @@ public class SistemaOperacional {
         }else
 
         if (p.getMemoriaRAMAlocada() > computador.getMemoriaRAM()) {
-            System.out.println("Erro na execucao: Sem memoria RAM o suficiente.");
+            System.out.println("Erro na execucao: Sem memoria RAM suficiente.");
             
         }else 
             
