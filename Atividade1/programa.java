@@ -1,7 +1,7 @@
 
 package Atividade1;
 
-public class Programa {
+public class Programa{
 
     private Integer memoriaRAMAlocada;
     private Integer SSDOcupado;

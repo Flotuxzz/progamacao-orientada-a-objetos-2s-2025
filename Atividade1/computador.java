@@ -1,6 +1,6 @@
 package Atividade1;
 
-public class Computador {
+public class Computador{
     private Integer memoriaRAM;
     private Integer SSD;
     private Integer nucleos;
