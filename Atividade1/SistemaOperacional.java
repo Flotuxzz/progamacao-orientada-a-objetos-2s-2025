@@ -20,11 +20,11 @@ public class SistemaOperacional {
         if(p.getMemoriaRAMAlocada() <= computador.getMemoriaRAM() && p.getSSDOcupado() <= computador.getSSD()){
 
         System.out.println("Programa executado com sucesso!");
-
+        float tempoExecucao = (float) p.getQuantidadeOperacoes() / (computador.getOperacoesPorSegundo() * computador.getNucleos());
+        System.out.printf("Tempo de execucao: %.2f segundos%n", tempoExecucao);
         }
         
-    float tempoExecucao = (float) p.getQuantidadeOperacoes() / (computador.getOperacoesPorSegundo() * computador.getNucleos());
-    System.out.printf("Tempo de execucao: %.2f segundos%n", tempoExecucao);
+    
     return true;   
         
     }
