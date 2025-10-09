@@ -20,12 +20,7 @@ public class Usuario extends Pessoa {
         System.out.println("=== Dados do Usuário ===");
         System.out.println("Nome: " + getNome());
         System.out.println("Email: " + getEmail());
-        System.out.println("Matrícula: " + matricula);
-    }
-
-    @Override
-    public String toString() {
-        return super.toString() + "\nMatrícula: " + matricula;
+        System.out.println("Matrícula: " + this.matricula);
     }
 }
 

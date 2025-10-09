@@ -14,31 +14,31 @@ public class Emprestimo {
     }
 
     public Pessoa getPessoa() {
-         return pessoa; 
+         return pessoa;
         }
     public void setPessoa(Pessoa pessoa) {
-         this.pessoa = pessoa; 
+         this.pessoa = pessoa;
         }
 
     public Material getMaterial() {
-         return material; 
+         return material;
         }
     public void setMaterial(Material material) {
-         this.material = material; 
+         this.material = material;
         }
 
     public String getDataEmprestimo() {
-         return dataEmprestimo; 
+         return dataEmprestimo;
         }
     public void setDataEmprestimo(String dataEmprestimo) {
-         this.dataEmprestimo = dataEmprestimo; 
+         this.dataEmprestimo = dataEmprestimo;
         }
 
     public String getDataDevolucao() {
-         return dataDevolucao; 
+         return dataDevolucao;
         }
     public void setDataDevolucao(String dataDevolucao) {
-         this.dataDevolucao = dataDevolucao; 
+         this.dataDevolucao = dataDevolucao;
         }
 
     public void exibirDetalhes() {
@@ -46,16 +46,8 @@ public class Emprestimo {
         System.out.println("Data do Empréstimo: " + dataEmprestimo);
         System.out.println("Data de Devolução: " + dataDevolucao);
         System.out.println();
-        pessoa.exibirInfo();
+        this.pessoa.exibirInfo();
         System.out.println();
-        material.descricao();
-    }
-
-    @Override
-    public String toString() {
-        return "Data do Empréstimo: " + dataEmprestimo +
-               "\nData de Devolução: " + dataDevolucao +
-               "\nPessoa: " + pessoa.getNome() +
-               "\nMaterial: " + material.getTitulo();
+        this.material.descricao();
     }
 }

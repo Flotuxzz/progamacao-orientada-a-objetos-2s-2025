@@ -1,30 +1,25 @@
 package Atividade2;
 
 public class Livro extends Material {
-    private String edicao;
+    private String autor;
 
-    public Livro(String titulo, int anoPublicacao, String edicao) {
+    public Livro(String titulo, Integer anoPublicacao, String autor) {
         super(titulo, anoPublicacao);
-        this.edicao = edicao;
+        this.autor = autor;
     }
 
-    public String getEdicao() { 
-        return edicao; 
+    public String getAutor() { 
+        return autor; 
     }
-    public void setEdicao(String edicao) { 
-        this.edicao = edicao; 
+    public void setAutor(String autor) { 
+        this.autor = autor; 
     }
 
     @Override
     public void descricao() {
         System.out.println("=== Livro ===");
-        System.out.println("Título: " + getTitulo());
-        System.out.println("Ano de Publicação: " + getAnoPublicacao());
-        System.out.println("Edição: " + edicao);
-    }
-
-    @Override
-    public String toString() {
-        return super.toString() + "\nEdição: " + edicao;
+        System.out.println("Título: " + this.getTitulo());
+        System.out.println("Ano de Publicação: " + this.getAnoPublicacao());
+        System.out.println("Edição: " + this.autor);
     }
 }

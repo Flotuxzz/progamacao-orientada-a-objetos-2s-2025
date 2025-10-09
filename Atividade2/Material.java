@@ -2,7 +2,9 @@ package Atividade2;
 
 public abstract class Material {
     private String titulo;
-    private int anoPublicacao;
+    private Integer anoPublicacao;
+
+    public abstract void descricao();
 
     public Material(String titulo, int anoPublicacao) {
         this.titulo = titulo;
@@ -16,17 +18,11 @@ public abstract class Material {
         this.titulo = titulo; 
     }
 
-    public int getAnoPublicacao() { 
+    public Integer getAnoPublicacao() { 
         return anoPublicacao; 
     }
-    public void setAnoPublicacao(int anoPublicacao) { 
+    public void setAnoPublicacao(Integer anoPublicacao) { 
         this.anoPublicacao = anoPublicacao; 
     }
-
-    public abstract void descricao();
-
-    @Override
-    public String toString() {
-        return "Título: " + titulo + "\nAno de Publicação: " + anoPublicacao;
-    }
 }
+
