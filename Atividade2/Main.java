@@ -12,6 +12,13 @@ public class Main {
 
         int opcao;
 
+        // Exemplo fixo
+        Instituicao UCB = new Instituicao("123456", "UCB", "Brasília-DF");
+        Livro livro = new Livro("Livro 1", 2016, "João");
+        Emprestimo exemploUCB = new Emprestimo(UCB, livro, "15/10/2025", "15/11/2025");
+        emprestimos.add(exemploUCB);
+
+
         do {
             System.out.println("===== SISTEMA DE BIBLIOTECA =====");
             System.out.println("1 - Cadastrar Usuário");
@@ -142,21 +149,3 @@ public class Main {
         sc.close();
     }
 }
-// public class Main {
-//     public static void main(String[] args) {
-
-//         Usuario usuario = new Usuario("Lucas Pereira", "lucas@email.com", 12345);
-//         Livro livro = new Livro("Programação Orientada a Objetos em Java", 2024, "3ª edição");
-
-//         Emprestimo emprestimo = new Emprestimo(usuario, livro, "08/10/2025", "15/10/2025");
-//         emprestimo.exibirDetalhes();
-
-//         System.out.println("\n-----------------------------\n");
-
-//         Funcionario funcionario = new Funcionario("Mariana Souza", "mariana@biblioteca.com", "Atendente");
-//         Revista revista = new Revista("Ciência Hoje", 2023, "Dr. Silva");
-
-//         Emprestimo emprestimo2 = new Emprestimo(funcionario, revista, "10/10/2025", "17/10/2025");
-//         emprestimo2.exibirDetalhes();
-//     }
-// }

@@ -1,53 +1,56 @@
 package Atividade2;
 
 public class Emprestimo {
-    private Pessoa pessoa;
+    private TomadorEmprestimo tomadorEmprestimo;
     private Material material;
     private String dataEmprestimo;
     private String dataDevolucao;
 
-    public Emprestimo(Pessoa pessoa, Material material, String dataEmprestimo, String dataDevolucao) {
-        this.pessoa = pessoa;
+    public Emprestimo(TomadorEmprestimo tomadorEmprestimo, Material material, String dataEmprestimo, String dataDevolucao) {
+        this.tomadorEmprestimo = tomadorEmprestimo;
         this.material = material;
         this.dataEmprestimo = dataEmprestimo;
         this.dataDevolucao = dataDevolucao;
     }
 
-    public Pessoa getPessoa() {
-         return pessoa;
-        }
-    public void setPessoa(Pessoa pessoa) {
-         this.pessoa = pessoa;
-        }
+    public TomadorEmprestimo getTomadorEmprestimo() {
+        return this.tomadorEmprestimo;
+    }
+
+    public void setTomadorEmprestimo(TomadorEmprestimo tomadorEmprestimo) {
+        this.tomadorEmprestimo = tomadorEmprestimo;
+    }
 
     public Material getMaterial() {
-         return material;
-        }
+        return this.material;
+    }
+
     public void setMaterial(Material material) {
-         this.material = material;
-        }
+        this.material = material;
+    }
 
     public String getDataEmprestimo() {
-         return dataEmprestimo;
-        }
+        return this.dataEmprestimo;
+    }
+
     public void setDataEmprestimo(String dataEmprestimo) {
-         this.dataEmprestimo = dataEmprestimo;
-        }
+        this.dataEmprestimo = dataEmprestimo;
+    }
 
     public String getDataDevolucao() {
-         return dataDevolucao;
-        }
-    public void setDataDevolucao(String dataDevolucao) {
-         this.dataDevolucao = dataDevolucao;
-        }
+        return this.dataDevolucao;
+    }
 
-    public void exibirDetalhes() {
-        System.out.println("=== Detalhes do Empréstimo ===");
-        System.out.println("Data do Empréstimo: " + dataEmprestimo);
-        System.out.println("Data de Devolução: " + dataDevolucao);
-        System.out.println();
-        this.pessoa.exibirInfo();
-        System.out.println();
+    public void setDataDevolucao(String dataDevolucao) {
+        this.dataDevolucao = dataDevolucao;
+    }
+
+    public void exibirDetalhes(){
+        System.out.println("Data do empréstimo: " + this.dataEmprestimo);
+        System.out.println("Data da devolução: " + this.dataDevolucao);
+        System.out.println("Pessoa vinculada");
+        this.tomadorEmprestimo.exibirInfo();
+        System.out.println("Material vinculada");
         this.material.descricao();
     }
 }
