@@ -14,8 +14,8 @@ public class Main {
 
         // Exemplo fixo
         Instituicao UCB = new Instituicao("123456", "UCB", "Brasília-DF");
-        Livro livro = new Livro("Livro 1", 2016, "João");
-        Emprestimo exemploUCB = new Emprestimo(UCB, livro, "15/10/2025", "15/11/2025");
+        Colecao NoiteEstrelada = new Colecao(2);
+        Emprestimo exemploUCB = new Emprestimo(UCB, NoiteEstrelada, "15/10/2025", "15/11/2025");
         emprestimos.add(exemploUCB);
 
 

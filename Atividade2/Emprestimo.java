@@ -2,13 +2,13 @@ package Atividade2;
 
 public class Emprestimo {
     private TomadorEmprestimo tomadorEmprestimo;
-    private Material material;
+    private ItemEmprestado itemEmprestado;
     private String dataEmprestimo;
     private String dataDevolucao;
 
-    public Emprestimo(TomadorEmprestimo tomadorEmprestimo, Material material, String dataEmprestimo, String dataDevolucao) {
+    public Emprestimo(TomadorEmprestimo tomadorEmprestimo, ItemEmprestado itemEmprestado, String dataEmprestimo, String dataDevolucao) {
         this.tomadorEmprestimo = tomadorEmprestimo;
-        this.material = material;
+        this.itemEmprestado = itemEmprestado;
         this.dataEmprestimo = dataEmprestimo;
         this.dataDevolucao = dataDevolucao;
     }
@@ -21,12 +21,12 @@ public class Emprestimo {
         this.tomadorEmprestimo = tomadorEmprestimo;
     }
 
-    public Material getMaterial() {
-        return this.material;
+    public ItemEmprestado getItemEmptrestado() {
+        return this.itemEmprestado;
     }
 
-    public void setMaterial(Material material) {
-        this.material = material;
+    public void setItemEmprestado(ItemEmprestado itemEmprestado) {
+        this.itemEmprestado = itemEmprestado;
     }
 
     public String getDataEmprestimo() {
@@ -51,6 +51,6 @@ public class Emprestimo {
         System.out.println("Pessoa vinculada");
         this.tomadorEmprestimo.exibirInfo();
         System.out.println("Material vinculada");
-        this.material.descricao();
+        this.itemEmprestado.descricao();
     }
 }
